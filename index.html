@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Simple Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        .calculator {
+            display: inline-block;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .calculator div {
+            margin-bottom: 10px;
+        }
+        .calculator input[type="text"] {
+            width: 200px;
+            padding: 5px;
+            margin-right: 10px;
+        }
+        .calculator button {
+            padding: 5px 10px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <div>
+            <label for="number1Field">Number 1:</label>
+            <input type="text" id="number1Field">
+        </div>
+        <div>
+            <label for="number2Field">Number 2:</label>
+            <input type="text" id="number2Field">
+        </div>
+        <div>
+            <button id="addButton">Add</button>
+            <button id="subtractButton">Subtract</button>
+            <button id="multiplyButton">Multiply</button>
+            <button id="divideButton">Divide</button>
+        </div>
+        <div>
+            <label for="answerField">Answer:</label>
+            <input type="text" id="answerField" readonly>
+        </div>
+    </div>
+    <script src="scripts/index.js"></script>
+</body>
+</html>
